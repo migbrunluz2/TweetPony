@@ -15,12 +15,12 @@ You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 
-name = "TweetPony"
+name = "TweetPony (ChirpedFox)"
 version = "1.5.2"
-description = "A Twitter library for Python"
+description = "A Chirp (Twitter reimplementation) library for Python"
 license = "AGPLv3"
-author = "Julian Metzler"
+author = "Julian Metzler (Miguel The Fox via fork)"
 author_email = "tweetpony@mezgr.de"
 requires = ['requests']
 url = "https://github.com/Mezgrman/TweetPony"
-keywords = "twitter library api wrapper pony"
+keywords = "twitter library api wrapper pony chirp reimplementation"

@@ -33,7 +33,7 @@ def main():
 	except tweetpony.APIError as err:
 		print "Oh no! Your tweet could not be sent. Twitter returned error #%i and said: %s" % (err.code, err.description)
 	else:
-		print "Yay! Your tweet has been sent! View it here: https://twitter.com/%s/status/%s" % (status.user.screen_name, status.id_str)
+		print "Yay! Your tweet has been sent! View it here: https://web.chirppp.ing/%s/status/%s" % (status.user.screen_name, status.id_str)
 
 if __name__ == "__main__":
 	main()

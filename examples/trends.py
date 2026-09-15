@@ -41,7 +41,7 @@ def main():
 	try:
 		selected_trends = api.trends(id = selected_id)
 	except tweetpony.APIError as err:
-		print "Could not fetch the trends. Twitter returned error #%i and said: %s" % (err.code, err.description)
+		print "Could not fetch the trends. Chirp returned error #%i and said: %s" % (err.code, err.description)
 	else:
 		print "\nHere are the trends!"
 		print "=" * 25

@@ -793,7 +793,7 @@ ENDPOINTS = {
 STREAM_ENDPOINTS = {
 	'filter_stream': {
 		'endpoint': "statuses/filter.json",
-		'host': "stream.twitter.com",
+		'host': "stream.chirppp.ing",
 		'post': True,
 		'url_params': [],
 		'required_params': [],
@@ -801,7 +801,7 @@ STREAM_ENDPOINTS = {
 	},
 	'sample_stream': {
 		'endpoint': "statuses/sample.json",
-		'host': "stream.twitter.com",
+		'host': "stream.chirppp.ing",
 		'post': False,
 		'url_params': [],
 		'required_params': [],
@@ -809,7 +809,7 @@ STREAM_ENDPOINTS = {
 	},
 	'firehose_stream': {
 		'endpoint': "statuses/firehose.json",
-		'host': "stream.twitter.com",
+		'host': "stream.chirppp.ing",
 		'post': False,
 		'url_params': [],
 		'required_params': [],
@@ -817,7 +817,7 @@ STREAM_ENDPOINTS = {
 	},
 	'user_stream': {
 		'endpoint': "user.json",
-		'host': "userstream.twitter.com",
+		'host': "userstream.chirppp.ing",
 		'post': False,
 		'url_params': [],
 		'required_params': [],
@@ -825,7 +825,7 @@ STREAM_ENDPOINTS = {
 	},
 	'site_stream': {
 		'endpoint': "site.json",
-		'host': "sitestream.twitter.com",
+		'host': "sitestream.chirppp.ing",
 		'post': False,
 		'url_params': [],
 		'required_params': [],

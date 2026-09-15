@@ -1,16 +1,11 @@
-TweetPony – A Twitter library for Python
+TweetPony [ChirpFox] – A Chirp (Twitter Reimplmentation) library for Python
 ========================================
-…it's called TweetPony because I developed it with ponies in mind.
+…it's called TweetPony and ChirpFox because I developed it with ponies in mind (along with the help of foxes).
 
 License
 -------
 This program is licensed under the AGPLv3. See the `LICENSE` file for more information.
 
-Installation
-------------
-You can easily install TweetPony using the Python Package Index. Just type:
-
-	sudo pip install tweetpony
 
 Usage basics
 ------------
@@ -109,7 +104,7 @@ import tweetpony
 api = tweetpony.API(consumer_key = "abc", consumer_secret = "def", access_token = "ghi", access_token_secret = "jkl")
 user = api.user
 print "Hello, @%s!" % user.screen_name
-text = raw_input("What would you like to tweet? ")
+text = raw_input("What would you like to Chirp? ")
 try:
 	api.update_status(status = text)
 except tweetpony.APIError as err:

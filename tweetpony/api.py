@@ -50,7 +50,7 @@ class KWArgDict(dict):
 			return dict.__getitem__(self, key)
 
 class API(object):
-	def __init__(self, consumer_key, consumer_secret, access_token = None, access_token_secret = None, host = "api.twitter.com", root = "/1.1/", oauth_host = "api.twitter.com", oauth_root = "/oauth/", secure = True, timeout = None, load_user = True, json_in_models = False):
+	def __init__(self, consumer_key, consumer_secret, access_token = None, access_token_secret = None, host = "api.chirppp.ing", root = "/1.1/", oauth_host = "api.chirppp.ing", oauth_root = "/oauth/", secure = True, timeout = None, load_user = True, json_in_models = False):
 		self.consumer_key = consumer_key
 		self.consumer_secret = consumer_secret
 		self.access_token = access_token
@@ -378,7 +378,7 @@ class API(object):
 			# First we upload all the media files and gather the assigned IDs
 			ids = []
 			for media in kwargs['media']:
-				url = self.build_request_url(self.root, "media/upload.json", host = "upload.twitter.com")
+				url = self.build_request_url(self.root, "media/upload.json", host = "upload.chirppp.ing")
 				resp = self.do_request("POST", url, files = {'media': media})
 				ids.append(resp['media_id'])
 			
